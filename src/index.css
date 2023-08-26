@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("assets/pexels-liis-saar-832521.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  background-color: whitesmoke;
+  width: 50%;
+  height: 35%;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.7);
+}
+
+button {
+  padding: 8px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  /* transition: 0.3s; */
+}
+button:hover {
+  transform: scale(1.01);
+}
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 85%;
+    height: 40%;
+  }
+}
